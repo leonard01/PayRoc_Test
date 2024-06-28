@@ -1,0 +1,28 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore the output file
+output.WIS
+
+# Ignore other typical IDE files and folders (optional)
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nbm/
+
+# VS Code
+.vscode/

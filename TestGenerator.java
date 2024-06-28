@@ -4,11 +4,16 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+import java.util.Scanner;
 
 public class TestGenerator {
     public static void main(String[] args) {
-        // Number of batches to generate
-        int numBatches = 10;  // You can change this to any number of batches you want
+        // Scanner for user input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Ask user for the number of batches
+        System.out.print("Enter the number of batches to generate: ");
+        int numBatches = scanner.nextInt();
         
         // Filename
         String filename = "output.WIS";
@@ -50,5 +55,8 @@ public class TestGenerator {
         } catch (IOException | InterruptedException e) {
             System.err.println("Error writing to file: " + e.getMessage());
         }
+        
+        // Close the scanner
+        scanner.close();
     }
 }
