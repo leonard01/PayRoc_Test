@@ -115,7 +115,7 @@ public class TestGenerator {
                 int randomMinutes = random.nextInt(61);
                 calendar.add(Calendar.MINUTE, randomMinutes);
             }
-            System.out.println("Random number data written to " + filename);
+            System.out.println("Random data written to " + filename);
         } catch (IOException e) {
             System.err.println("Error writing to file: " + e.getMessage());
         }
