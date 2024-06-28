@@ -10,7 +10,7 @@
 - Generates random temperature values in either Celsius or Fahrenheit.
 - Generates random wind speed values in km/h.
 - Adds a random cardinal or ordinal direction.
-- Includes a random integer (0 to 100).
+- Includes a random integer (0 to 100) signifying precipitation chance.
 - Allows the user to specify the number of batches to generate.
 - Each new batch has a timestamp that is a random number of minutes in the future.
 
@@ -26,13 +26,13 @@
 To compile the Java program, run the following command:
 
 ```sh
-javac RandomNumberData.java
+javac TestGenerator.java
 ```
 
 #### Execution
 
 ```sh
-java RandomNumberData
+java TestGenerator
 ```
 
 You will then be asked to enter the number of batches to generate
